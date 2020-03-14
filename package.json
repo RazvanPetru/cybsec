@@ -8,6 +8,9 @@
     "start-server": "node app.js",
     "heroku-postbuild": "ng build --prod"
   },
+  "engines": {
+    "node": "^13.10.1"
+  },
   "author": "Razvan Petru",
   "license": "ISC",
   "dependencies": {
@@ -18,7 +21,6 @@
     "minimist": "^1.2.5",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.4",
-    "node": "^13.10.1",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2"
   }
