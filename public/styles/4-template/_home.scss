@@ -18,8 +18,12 @@
         flex-direction: column;
 
         &-big {
-            font-size: 4rem;
+            font-size: 3.5rem;
             color: $black-brown-color;
+
+            @include breakpoint(medium) {
+                font-size: 4rem;
+            }
         }
 
         &-btn {

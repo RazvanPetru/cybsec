@@ -4,9 +4,9 @@
   "description": "landing-page",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "start-server": "node app.js"
+    "start": "node app.js",
+    "start-server": "node app.js",
+    "heroku-postbuild": "ng build --prod"
   },
   "author": "Razvan Petru",
   "license": "ISC",

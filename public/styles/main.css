@@ -298,8 +298,14 @@ body {
 }
 
 .header--description-big {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #232020;
+}
+
+@media screen and (min-width: 899px) {
+  .header--description-big {
+    font-size: 4rem;
+  }
 }
 
 .header--description-btn {
