@@ -5,21 +5,21 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/scripts/server.js",
-    "start-server": "node ./src/scripts/server.js"
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
   },
   "author": "Razvan Petru",
   "license": "ISC",
   "dependencies": {
+    "acorn": "^7.1.1",
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
+    "minimist": "^1.2.5",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.4",
     "node": "^13.10.1",
     "node-sass": "^4.13.1",
-    "nodemon": "^2.0.2",
-    "pug": "^2.0.4"
+    "nodemon": "^2.0.2"
   }
 }
