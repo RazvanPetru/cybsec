@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    margin: 0 1rem;
+
+    @include breakpoint(medium) {
+        flex-direction: row;
+        margin: 4rem 5rem;
+    }
+
+    @include breakpoint(large) {
+        margin: 4rem 10rem;
+    }
+
+    &--description {
+        margin-top: 10rem;
+        flex-direction: column;
+
+        &-big {
+            font-size: 4rem;
+            color: $black-brown-color;
+        }
+
+        &-btn {
+            margin-top: 2rem;
+            @include btn;
+        }
+    }
+}
+
+img {
+    @include img;
+    margin-top: 4rem;
+
+    @include breakpoint(medium) {
+        margin-top: 2rem;
+    }
+}
+
+.scroll--more {
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    #scroll {
+        transform: rotate(-90deg);
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        color: $black-color;
+    }
+
+    .fas {
+        margin-left: 1.3rem;
+        font-size: 1.4rem;
+        color: $orange-color;
+    }
+}
+
+svg {
+    position: absolute;
+    z-index: -1;
+}

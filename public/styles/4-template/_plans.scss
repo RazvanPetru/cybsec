@@ -1,0 +1,102 @@
+.plans {
+    &--description {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 22rem;
+        padding: 0 4rem;
+
+        @include breakpoint(medium) {
+            padding: 0 8rem;
+        }
+
+        @include breakpoint(large) {
+            padding: 0 12rem;
+        }
+
+        &-big {
+            @include breakpoint(medium) {
+                width: 60rem;
+            }
+        }
+    }
+
+    &--container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 4rem;
+        margin: 5rem;
+
+        &-item,
+        .item {
+            display: flex;
+            flex-direction: column;
+            background-color: $white-color;
+            width: 25rem;
+            height: 32rem;
+            border-radius: 2rem;
+            padding: 2rem 4rem;
+            margin: 2rem 0;
+            box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover .item-btn {
+                display: block;
+
+                @include btn;
+                margin-top: 5rem;
+                padding: 1rem 2.5rem;
+                cursor: pointer;
+            }
+
+            &:hover {
+                background-color: $blue-color;
+            }
+
+            &:hover .item-number {
+                color: $grey-white-color;
+            }
+
+            &:hover .item-title {
+                color: $grey-white-color;
+            }
+
+            &:hover .price {
+                color: $grey-white-color;
+            }
+
+            &-number {
+                padding: 2rem 0;
+                color: $orange-color;
+            }
+
+            &-title {
+                letter-spacing: 0.1rem;
+                padding-bottom: 1rem;
+            }
+
+            &-description {
+                line-height: 2.5rem;
+                color: $grey-color;
+            }
+
+            &-price {
+                padding-top: 2rem;
+                color: $grey-color;
+
+                .price {
+                    color: $black-color;
+                }
+            }
+
+            &-btn {
+                display: none;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}

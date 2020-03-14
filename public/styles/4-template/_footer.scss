@@ -1,0 +1,110 @@
+.footer {
+  padding-top: 20rem;
+  background-color: $white-color;
+
+  &--container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    @include breakpoint(medium) {
+      align-items: center;
+    }
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+
+    &-menu,
+    .menu {
+      margin: 0 0;
+      line-height: 3rem;
+      color: $blue-color;
+
+      &--medium {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 1.6rem;
+
+        &:after {
+          content: "";
+          width: 4rem;
+          height: 0.1rem;
+          background-color: $orange-color;
+          display: block;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .menu {
+        display: flex;
+        color: $black-color;
+        text-decoration: none;
+      }
+    }
+
+    &-contanct,
+    .contact {
+      padding: 4rem 0;
+      line-height: 3rem;
+
+      &--medium {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 1.6rem;
+        color: $blue-color;
+
+        &:after {
+          content: "";
+          width: 5rem;
+          height: 0.1rem;
+          background-color: $orange-color;
+          display: block;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &-social,
+    .social {
+      margin: 4rem 0;
+      line-height: 3rem;
+      color: $blue-color;
+
+      &--medium {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 1.6rem;
+
+        &:after {
+          content: "";
+          width: 5rem;
+          height: 0.1rem;
+          background-color: $orange-color;
+          display: block;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .social--icon {
+        padding-top: 1rem;
+        padding-right: 2rem;
+        font-size: 2rem;
+        color: $black-color;
+      }
+    }
+  }
+}
+
+.footer--creator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}

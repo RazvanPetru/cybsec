@@ -1,0 +1,31 @@
+.small {
+    font-size: 1rem;
+    color: $black-color;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:before {
+        content: '';
+        background-color: $orange-color;
+        width: 2rem;
+        height: .1rem;
+        display: inline-block;
+        margin: 1rem 1rem;
+        transform: translateY(.7rem);
+    }
+}
+
+.big {
+    font-size: 4rem;
+    padding-top: 1rem;
+    letter-spacing: .1rem;
+
+    @include breakpoint(medium) {
+        width: 50rem;
+    }
+}
+
+.paragraph {
+    margin-top: 1rem;
+    color: $grey-brown-color;
+}
