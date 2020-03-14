@@ -1,17 +1,23 @@
 .signup {
 
     &--container {
-        display: flex;
-        flex-direction: row;
         padding-top: 7%;
-        padding-left: 10rem;
+        padding-left: 1rem;
+
+        @include breakpoint(medium) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
 
         &-forms,
         .forms {
             display: flex;
             flex-direction: column;
             height: 100%;
-            width: 70%;
+            justify-content: center;
+            align-items: center;
             padding: 4rem 2rem;
 
             &--account,
@@ -40,8 +46,7 @@
                 padding-top: 2rem;
 
                 &-account {
-                    padding: .8rem 0;
-                    width: 100%;
+                    padding: .8rem 3rem;
                     border-radius: 2rem;
                     border: 1px solid $blue-color;
                     background-color: $blue-color;
@@ -73,9 +78,15 @@
         }
 
         &-img {
-            margin-top: 2rem;
             width: 100%;
-            height: 300px;
+            height: 100px;
+            opacity: 0;
+
+            @include breakpoint(medium) {
+                height: 300px;
+                width: 40%;
+                opacity: 1;
+            }
         }
     }
 }

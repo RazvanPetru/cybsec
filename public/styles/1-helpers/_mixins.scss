@@ -5,15 +5,15 @@
 }
 
 @mixin btn {
-    padding: 1rem 2rem;
+    padding: .8rem 1.6rem;
     border-radius: 2rem;
     background-color: $orange-color;
     border: 1px solid $orange-color;
     letter-spacing: .1rem;
     color: $white-color;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, .3);
-
     transition: all .3s ease;
+    font-size: 1.1rem;
 
     &:focus {
         outline: 0;
@@ -22,11 +22,6 @@
     &:hover {
         box-shadow: 1px 2px 2px rgba(0, 0, 0, .2);
         cursor: pointer;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
     }
 }
 

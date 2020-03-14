@@ -16,6 +16,11 @@
     &--description {
         margin-top: 10rem;
         flex-direction: column;
+        margin-bottom: 4rem;
+
+        @include breakpoint(medium) {
+            margin-bottom: 0;
+        }
 
         &-big {
             font-size: 3.5rem;
@@ -27,7 +32,10 @@
         }
 
         &-btn {
-            margin-top: 2rem;
+            position: absolute;
+            margin-top: 1rem;
+            text-decoration: none;
+
             @include btn;
         }
     }

@@ -133,7 +133,10 @@
       right: 10%;
     }
 
-    .btn--signUp {
+    .btn--signUp,
+    a {
+      text-decoration: none;
+
       @include btn;
     }
   }

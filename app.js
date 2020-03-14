@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 const adminRoutes = require('./routes/admin');
-const shopRoutes = require('./routes/shop');
+const loginRoutes = require('./routes/login');
 
 app.use(
     bodyParser.urlencoded({
@@ -14,8 +14,8 @@ app.use(
     })
 );
 
-app.use('/admin', adminRoutes);
-app.use(shopRoutes);
+app.use(adminRoutes);
+app.use(loginRoutes);
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
