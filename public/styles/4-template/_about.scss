@@ -29,14 +29,9 @@
         }
 
         &--content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             letter-spacing: .1rem;
             line-height: 2.5rem;
             font-size: 1.6rem;
-            width: 100%;
-
         }
 
         @include breakpoint(medium) {
@@ -47,10 +42,14 @@
 
     &-testimonial,
     .testimonial {
-        padding: 0 4rem;
+
+        @include breakpoint(small) {
+            width: 400px;
+            margin: 0 auto;
+        }
 
         @include breakpoint(medium) {
-            padding: 0 0;
+            padding: 0 2;
         }
 
         &--img,
@@ -72,7 +71,7 @@
 }
 
 .talk--container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 5rem;
     display: flex;
@@ -81,6 +80,10 @@
     border-radius: 2rem;
     padding: 2rem 5rem;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, .5);
+
+    @include breakpoint(small) {
+        width: 50rem;
+    }
 
     @include breakpoint(medium) {
         width: 50rem;
