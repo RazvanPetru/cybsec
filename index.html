@@ -1,255 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CybSec</title>
+    <!-- FONT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxanium:300,400,500|Raleway:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <!-- JS FILE -->
+    <script defer src="./public/js/index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CybSec</title>
-  <!-- FONT AWESOME LINK -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
-  <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Oxanium:300,400,500|Raleway:300,400,500&display=swap"
-    rel="stylesheet" />
-  <!-- CSS FILE -->
-  <link rel="stylesheet" href="./public/styles/main.css" />
-  <!-- JS FILE -->
-  <script defer src="./public/js/index.js"></script>
-</head>
-
-<body>
-  <div class="waves--container">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#323edd" fill-opacity="1"
-        d="M0,320L30,288C60,256,120,192,180,192C240,192,300,256,360,240C420,224,480,128,540,106.7C600,85,660,139,720,138.7C780,139,840,85,900,64C960,43,1020,53,1080,101.3C1140,149,1200,235,1260,261.3C1320,288,1380,256,1410,240L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
-      </path>
-    </svg>
-  </div>
-
-  <!-- NAV BAR-->
-  <nav class="nav">
-    <div class="nav--logo">
-      <h1 class="logo">
-        <a href="https://cybsecc.herokuapp.com/">
-          Cyb<span id="elem">Sec</span></a>
-      </h1>
-    </div>
-
-    <div class="nav--links">
-      <li><a href="#">How it works</a></li>
-      <li><a href="#about">Advantages</a></li>
-      <li><a href="#plans">Plans</a></li>
-      <li><a href="#">About us</a></li>
-    </div>
-
-    <div class="nav--btn btn">
-      <a class="btn--signUp" href="https://cybsecc.herokuapp.com/login">Sign up</a>
-    </div>
-
-    <div class="nav--toggle">
-      <span class="line-1 nav--toggle-line"></span>
-      <span class="line-2 nav--toggle-line"></span>
-      <span class="line-3 nav--toggle-line"></span>
-    </div>
-  </nav>
-
-  <!-- HEADER -->
-  <header id="header" class="header">
-    <div class="header--description">
-      <h5 class="header--description-small small">
-        cyber insurance
-      </h5>
-      <h1 class="header--description-big big">
-        Are you sure your business is secure from cyber attacks?
-      </h1>
-      <p class="header--description-par paragraph">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos hic
-        voluptatem numquam cumque iste aliquid delectus.
-      </p>
-
-      <a class="header--description-btn btn" href="#">Learn more !</a>
-    </div>
-    <div class="haeder--img">
-      <img class="img img--mobile" src="./public/img/intro-2.svg" alt="" />
-    </div>
-
-    <div class="scroll--more">
-      <p id="scroll">Scroll</p>
-      <i class="fas fa-arrow-down"></i>
-    </div>
-  </header>
-
-  <!-- Advantages-->
-  <section id="advantages" class="adv">
+  <body>
     <div class="waves--container">
-      <svg class="about--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#f4f4f4" fill-opacity="1"
-          d="M0,128L80,133.3C160,139,320,149,480,176C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
-        </path>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#323edd"
+          fill-opacity="1"
+          d="M0,320L30,288C60,256,120,192,180,192C240,192,300,256,360,240C420,224,480,128,540,106.7C600,85,660,139,720,138.7C780,139,840,85,900,64C960,43,1020,53,1080,101.3C1140,149,1200,235,1260,261.3C1320,288,1380,256,1410,240L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+        ></path>
       </svg>
     </div>
-    <div class="adv--description">
-      <h5 class="adv--description-small small">
-        what does it include
-      </h5>
 
-      <h1 class="adv--description-big big">
-        What does cyber insurance cover?
-      </h1>
-    </div>
-    <div class="adv--container">
-      <div class="adv--container-elem elem">
-        <div class="elem elem-1">
-          <i class="icon fas fa-robot"></i>
-
-          <h3>Financial crime</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="elem elem-2">
-          <i class="icon fas fa-unlock-alt"></i>
-
-          <h3>Loss of data</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="elem elem-3">
-          <i class="icon fas fa-user-times"></i>
-
-          <h3>Human error</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="elem elem-4">
-          <i class="icon fas fa-desktop"></i>
-
-          <h3>Material damage</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#323edd" fill-opacity="1"
-        d="M0,256L120,229.3C240,203,480,149,720,133.3C960,117,1200,139,1320,149.3L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-      </path>
-    </svg>
-  </section>
-
-  <!-- PLANS -->
-  <section id="plans" class="plans">
-    <div class="plans--description">
-      <h5 class="prices--description-small small">price plans</h5>
-      <h1 class="prices--description-big big">Who's cyber insurance for?</h1>
-    </div>
-
-    <div class="plans--container">
-      <div class="plans--container-item item">
-        <p class="plans--container-number item-number">01</p>
-        <h3 class="plans--container-title item-title">Premium</h3>
-        <p class="plans--container-description item-description paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p class="plans--container-price item-price paragraph">
-          <span class="price">40$</span>/month
-        </p>
-        <button class="plans--container-btn item-btn">Buy insurance</button>
-      </div>
-
-      <div class="plans--container-item item">
-        <p class="plans--container-number item-number">02</p>
-        <h3 class="plans--container-title item-title">Businesses</h3>
-        <p class="plans--container-description item-description paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p class="plans--container-price item-price paragraph">
-          <span class="price">35$</span>/month
-        </p>
-        <button class="plans--container-btn item-btn">Buy insurance</button>
-      </div>
-
-      <div class="plans--container-item item">
-        <p class="plans--container-number item-number">03</p>
-        <h3 class="plans--container-title item-title">Charities</h3>
-        <p class="plans--container-description item-description paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p class="plans--container-price item-price paragraph">
-          <span class="price">27$</span>/month
-        </p>
-        <button class="plans--container-btn item-btn">Buy insurance</button>
-      </div>
-    </div>
-    <svg class="adv--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#f4f4f4" fill-opacity="1"
-        d="M0,256L120,250.7C240,245,480,235,720,197.3C960,160,1200,96,1320,64L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-      </path>
-    </svg>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <div class="about--container">
-      <div class="about--container-description description">
-        <h1 class="description--small small">testimonials</h1>
-        <h1 class="description--title big">Now my business is secured</h1>
-        <p class="description--content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa
-          pariatur sed adipisci inventore maiores necessitatibus placeat illum
-          corrupti perferendis at dolore alias amet hic corporis cum expedita,
-          consequatur eveniet!
-        </p>
-      </div>
-
-      <div class="about--container-testimonial testimonial">
-        <div class="testimonial--buton"></div>
-        <div class="testimonial--img">
-          <img src="./public/img/testimonial-1.jpeg" alt="first-testimonial" />
-        </div>
-      </div>
-    </div>
-    <div class="talk">
-      <div class="talk--container">
-        <h1 class="talk--container-content">
-          Ready to make your business protected against cyber crime?
+    <!-- NAV BAR-->
+    <nav class="nav">
+      <div class="nav--logo">
+        <h1 class="logo">
+          <a href="https://cybsecc.herokuapp.com/">
+            Cyb<span id="elem">Sec</span></a
+          >
         </h1>
-        <div class="talk--container-email email">
-          <input type="email" class="email--input" placeholder="Email" />
-          <button class="email--btn">Let's talk</button>
+      </div>
+
+      <div class="nav--links">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#about">Advantages</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#">About us</a></li>
+      </div>
+
+      <div class="nav--btn btn">
+        <a class="btn--signUp" href="https://cybsecc.herokuapp.com/login"
+          >Sign up</a
+        >
+      </div>
+
+      <div class="nav--toggle">
+        <span class="line-1 nav--toggle-line"></span>
+        <span class="line-2 nav--toggle-line"></span>
+        <span class="line-3 nav--toggle-line"></span>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="header" class="header">
+      <div class="header--description">
+        <h5 class="header--description-small small">
+          cyber insurance
+        </h5>
+        <h1 class="header--description-big big">
+          Are you sure your business is secure from cyber attacks?
+        </h1>
+        <p class="header--description-par paragraph">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos hic
+          voluptatem numquam cumque iste aliquid delectus.
+        </p>
+
+        <a class="header--description-btn btn" href="/sds">Learn more !</a>
+      </div>
+      <div class="haeder--img">
+        <img class="img img--mobile" src="./public/img/intro-2.svg" alt="" />
+      </div>
+
+      <div class="scroll--more">
+        <p id="scroll">Scroll</p>
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </header>
+
+    <!-- Advantages-->
+    <section id="advantages" class="adv">
+      <div class="waves--container">
+        <svg
+          class="about--svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#f4f4f4"
+            fill-opacity="1"
+            d="M0,128L80,133.3C160,139,320,149,480,176C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="adv--description">
+        <h5 class="adv--description-small small">
+          what does it include
+        </h5>
+
+        <h1 class="adv--description-big big">
+          What does cyber insurance cover?
+        </h1>
+      </div>
+      <div class="adv--container">
+        <div class="adv--container-elem elem">
+          <div class="elem elem-1">
+            <i class="icon fas fa-robot"></i>
+
+            <h3>Financial crime</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="elem elem-2">
+            <i class="icon fas fa-unlock-alt"></i>
+
+            <h3>Loss of data</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="elem elem-3">
+            <i class="icon fas fa-user-times"></i>
+
+            <h3>Human error</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="elem elem-4">
+            <i class="icon fas fa-desktop"></i>
+
+            <h3>Material damage</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
       </div>
-    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#323edd"
+          fill-opacity="1"
+          d="M0,256L120,229.3C240,203,480,149,720,133.3C960,117,1200,139,1320,149.3L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+        ></path>
+      </svg>
+    </section>
 
-    <!-- ABOUT SVG WAVES -->
-    <svg class="about--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#323edd" fill-opacity="1"
-        d="M0,192L48,176C96,160,192,128,288,101.3C384,75,480,53,576,69.3C672,85,768,139,864,160C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-      </path>
-    </svg>
-  </section>
-
-  <!-- FOOTER -->
-  <footer id="footer" class="footer">
-    <div class="footer--container">
-      <div class="footer--container-menu menu">
-        <h1 class="menu--medium medium">menu</h1>
-        <a class="menu" href="#">How it works</a>
-        <a class="menu" href="#">Advantages</a>
-        <a class="menu" href="#">Plans</a>
-        <a class="menu" href="#">About Us</a>
+    <!-- PLANS -->
+    <section id="plans" class="plans">
+      <div class="plans--description">
+        <h5 class="prices--description-small small">price plans</h5>
+        <h1 class="prices--description-big big">Who's cyber insurance for?</h1>
       </div>
 
-      <div class="footer--container-contact contact">
-        <h1 class="contact--medium medium">contact us</h1>
-        <p>cybsec@gmail.com</p>
-        <p>07-------</p>
+      <div class="plans--container">
+        <div class="plans--container-item item">
+          <p class="plans--container-number item-number">01</p>
+          <h3 class="plans--container-title item-title">Premium</h3>
+          <p class="plans--container-description item-description paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <p class="plans--container-price item-price paragraph">
+            <span class="price">40$</span>/month
+          </p>
+          <button class="plans--container-btn item-btn">Buy insurance</button>
+        </div>
+
+        <div class="plans--container-item item">
+          <p class="plans--container-number item-number">02</p>
+          <h3 class="plans--container-title item-title">Businesses</h3>
+          <p class="plans--container-description item-description paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <p class="plans--container-price item-price paragraph">
+            <span class="price">35$</span>/month
+          </p>
+          <button class="plans--container-btn item-btn">Buy insurance</button>
+        </div>
+
+        <div class="plans--container-item item">
+          <p class="plans--container-number item-number">03</p>
+          <h3 class="plans--container-title item-title">Charities</h3>
+          <p class="plans--container-description item-description paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <p class="plans--container-price item-price paragraph">
+            <span class="price">27$</span>/month
+          </p>
+          <button class="plans--container-btn item-btn">Buy insurance</button>
+        </div>
+      </div>
+      <svg
+        class="adv--svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#f4f4f4"
+          fill-opacity="1"
+          d="M0,256L120,250.7C240,245,480,235,720,197.3C960,160,1200,96,1320,64L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="about--container">
+        <div class="about--container-description description">
+          <h1 class="description--small small">testimonials</h1>
+          <h1 class="description--title big">Now my business is secured</h1>
+          <p class="description--content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa
+            pariatur sed adipisci inventore maiores necessitatibus placeat illum
+            corrupti perferendis at dolore alias amet hic corporis cum expedita,
+            consequatur eveniet!
+          </p>
+        </div>
+
+        <div class="about--container-testimonial testimonial">
+          <div class="testimonial--buton"></div>
+          <div class="testimonial--img">
+            <img
+              src="./public/img/testimonial-1.jpeg"
+              alt="first-testimonial"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="talk">
+        <div class="talk--container">
+          <h1 class="talk--container-content">
+            Ready to make your business protected against cyber crime?
+          </h1>
+          <div class="talk--container-email email">
+            <input type="email" class="email--input" placeholder="Email" />
+            <button class="email--btn">Let's talk</button>
+          </div>
+        </div>
       </div>
 
-      <div class="footer--container-social social">
-        <h1 class="social--medium medium">follow us</h1>
-        <i class="social--icon fab fa-twitter"></i>
-        <i class="social--icon fab fa-facebook-f"></i>
-        <i class="social--icon fab fa-instagram"></i>
+      <!-- ABOUT SVG WAVES -->
+      <svg
+        class="about--svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#323edd"
+          fill-opacity="1"
+          d="M0,192L48,176C96,160,192,128,288,101.3C384,75,480,53,576,69.3C672,85,768,139,864,160C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+      <div class="footer--container">
+        <div class="footer--container-menu menu">
+          <h1 class="menu--medium medium">menu</h1>
+          <a class="menu" href="#">How it works</a>
+          <a class="menu" href="#">Advantages</a>
+          <a class="menu" href="#">Plans</a>
+          <a class="menu" href="#">About Us</a>
+        </div>
+
+        <div class="footer--container-contact contact">
+          <h1 class="contact--medium medium">contact us</h1>
+          <p>cybsec@gmail.com</p>
+          <p>07-------</p>
+        </div>
+
+        <div class="footer--container-social social">
+          <h1 class="social--medium medium">follow us</h1>
+          <i class="social--icon fab fa-twitter"></i>
+          <i class="social--icon fab fa-facebook-f"></i>
+          <i class="social--icon fab fa-instagram"></i>
+        </div>
       </div>
-    </div>
 
-    <p class="footer--creator">© 2020 Razvan Petru. All rights reserved.</p>
-  </footer>
-</body>
-
+      <p class="footer--creator">© 2020 Razvan Petru. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
