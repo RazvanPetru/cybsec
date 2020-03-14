@@ -43,9 +43,17 @@ body {
 }
 
 .big {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-top: 1rem;
   letter-spacing: .1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 499px) {
+  .big {
+    font-size: 3.5rem;
+    width: 40rem;
+  }
 }
 
 @media screen and (min-width: 899px) {
@@ -409,8 +417,9 @@ svg {
 }
 
 .adv--container {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0 4rem;
   padding-top: 10rem;
 }
@@ -547,7 +556,13 @@ svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 4rem;
-  margin: 5rem;
+  margin: 3rem;
+}
+
+@media screen and (min-width: 499px) {
+  .plans--container {
+    margin: 5rem;
+  }
 }
 
 .plans--container-item,
@@ -704,7 +719,20 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 0;
-  width: 70%;
+}
+
+@media screen and (min-width: 499px) {
+  .about--container-description,
+  .about--container .description {
+    width: 50rem;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  .about--container-description,
+  .about--container .description {
+    width: 40rem;
+  }
 }
 
 .about--container-description--title,
@@ -717,18 +745,6 @@ svg {
   letter-spacing: .1rem;
   line-height: 2.5rem;
   font-size: 1.6rem;
-}
-
-@media screen and (min-width: 899px) {
-  .about--container-description,
-  .about--container .description {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
 }
 
 @media screen and (min-width: 499px) {

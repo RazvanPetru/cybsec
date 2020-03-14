@@ -16,9 +16,15 @@
 }
 
 .big {
-    font-size: 4rem;
+    font-size: 3rem;
     padding-top: 1rem;
     letter-spacing: .1rem;
+    width: 100%;
+
+    @include breakpoint(small) {
+        font-size: 3.5rem;
+        width: 40rem;
+    }
 
     @include breakpoint(medium) {
         width: 50rem;

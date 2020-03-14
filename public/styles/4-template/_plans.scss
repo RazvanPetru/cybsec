@@ -28,7 +28,12 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 0 4rem;
-        margin: 5rem;
+        margin: 3rem;
+
+        @include breakpoint(small) {
+            margin: 5rem;
+        }
+
 
         &-item,
         .item {
