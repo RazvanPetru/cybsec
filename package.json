@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "start-server": "node app.js",
-    "heroku-postbuild": "ng build --prod"
+    "start-server": "node app.js"
   },
   "engines": {
     "node": "^13.10.1"
