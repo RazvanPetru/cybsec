@@ -19,7 +19,8 @@
         margin-bottom: 4rem;
 
         @include breakpoint(medium) {
-            margin-bottom: 0;
+            margin-bottom: 4remrem;
+            margin-top: 10rem;
         }
 
         &-big {

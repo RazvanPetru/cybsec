@@ -308,7 +308,8 @@ body {
 
 @media screen and (min-width: 899px) {
   .header--description {
-    margin-bottom: 0;
+    margin-bottom: 4remrem;
+    margin-top: 10rem;
   }
 }
 
@@ -583,7 +584,7 @@ svg {
   width: 25rem;
   height: 32rem;
   border-radius: 2rem;
-  padding: 2rem 4rem;
+  padding: 0 4rem;
   margin: 2rem 0;
   -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
@@ -606,7 +607,7 @@ svg {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-size: 1.1rem;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   padding: 1rem 2.5rem;
   cursor: pointer;
 }
@@ -652,7 +653,7 @@ svg {
 .plans--container-item-title,
 .plans--container .item-title {
   letter-spacing: 0.1rem;
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
 }
 
 .plans--container-item-description,
