@@ -21,7 +21,7 @@
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.4",
     "node": "^13.10.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.2"
   }
 }
